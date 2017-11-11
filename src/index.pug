@@ -1,11 +1,15 @@
-extends ./template/layout.pug
+extends template/layout.pug
 block head
-    - var title = "On Dogs";
+    - var title = "首页";
     title= title
+    link(rel="stylesheet", href="https://cdn.bootcss.com/Swiper/4.0.1/css/swiper.min.css")
     link(rel="stylesheet", href="css/index.css")
 block content
-    h1 #{title}
-    h4 54454
-    h5 我是h5545545455444
+    // 轮播
+    include template/swiper.pug
+    // 导航
+    - var nowIndex = title;
+    include template/nav.pug
 block scripts
-    script(src='js/index.js')    
+    script(src='https://cdn.bootcss.com/Swiper/4.0.1/js/swiper.min.js')
+    script(src='js/index.js')

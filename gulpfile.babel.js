@@ -18,7 +18,9 @@ gulp.task('default',['html','css','flx'],()=>{
     gulp.watch(Info.src.scss,['css']);
     gulp.watch(Info.src.pug,['html']);
     gulp.watch(Info.src.js,['flx']);
-    gulp.watch(Info.dist.html).on('change',browserSync.reload);
+    gulp.watch(Info.dist.css).on('change',browserSync.reload);
+    gulp.watch(Info.dist.js).on('change',browserSync.reload);
+    gulp.watch(Info.dist.html + '*.*').on('change',browserSync.reload);
 })
 // pug
 gulp.task('html',()=>{
