@@ -1,0 +1,15 @@
+body{
+    background: rgb(218, 15, 15);
+    >h1{
+        color: yellow;
+    }
+    >h2{
+        color: white;
+        font-size: 30px;
+    }
+    .test{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
