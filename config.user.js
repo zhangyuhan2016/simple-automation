@@ -3,6 +3,7 @@ const DirInfo = {
     // 开发源码
     src: {
         pug: './src/*.pug',
+        template: './src/template/*.pug',
         scss: './src/*.scss',
         images: './src/images/*.*',
         js: './src/*.js'

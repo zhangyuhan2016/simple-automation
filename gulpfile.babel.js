@@ -17,6 +17,7 @@ gulp.task('default',['html','css','flx'],()=>{
     });
     gulp.watch(Info.src.scss,['css']);
     gulp.watch(Info.src.pug,['html']);
+    gulp.watch(Info.src.template,['html']);
     gulp.watch(Info.src.js,['flx']);
     gulp.watch(Info.dist.css).on('change',browserSync.reload);
     gulp.watch(Info.dist.js).on('change',browserSync.reload);
@@ -30,7 +31,7 @@ gulp.task('html',()=>{
             }))
             .pipe(gulp.dest(Info.dist.html))
             .pipe(browserSync.stream());
-})  
+})
 // sass
 gulp.task('css',()=>{
     return gulp.src(Info.src.scss)
