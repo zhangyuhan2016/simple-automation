@@ -1,20 +1,20 @@
 'use strict'
-
-// var swiper = new Swiper('.swiper-container', {
-//     pagination: '.swiper-pagination',
-//     paginationClickable: true,
-//     nextButton: '.swiper-button-next',
-//     prevButton: '.swiper-button-prev',
-//     parallax: true,
-//     speed: 600,
-// });
 window.onload = function () {
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        spaceBetween: 30,
-        effect: 'fade'
-    });
+  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'vertical',
+    loop: true,
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    // 如果需要滚动条
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })
 }

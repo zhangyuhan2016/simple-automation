@@ -6,6 +6,7 @@ import pug from 'gulp-pug';
 import eslint from 'gulp-eslint';
 import eslintIfFixed from 'gulp-eslint-if-fixed';
 import babel from 'gulp-babel';
+import plumber from 'gulp-plumber';
 
 // 文件路径
 import {Info} from './config.user';
@@ -26,6 +27,7 @@ gulp.task('default',['html','css','flx'],()=>{
 // pug
 gulp.task('html',()=>{
     return gulp.src(Info.src.pug)
+            .pipe(plumber())
             .pipe(pug({
                 pretty: true
             }))
@@ -35,6 +37,7 @@ gulp.task('html',()=>{
 // sass
 gulp.task('css',()=>{
     return gulp.src(Info.src.scss)
+        .pipe(plumber())
         .pipe(sass({outputStyle: 'compact'}))
         .pipe(autoprefixer({
             browsers: ['> 0.1%'],
@@ -52,6 +55,7 @@ gulp.task('js',()=>{
 // eslint --fix
 gulp.task('flx',['js'],()=>{
     return gulp.src(Info.dist.js + '*.js')
+        .pipe(plumber())
         .pipe(eslint({fix:true}))
         .pipe(eslint.format())
         .pipe(eslintIfFixed(Info.dist.js))

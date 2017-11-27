@@ -10,6 +10,9 @@
     "env": {
       "browser": true
     },
+    "globals": {
+      "Swiper": true
+    },
     "rules": {
       "indent": ["error", 4],
       "semi": 0,
