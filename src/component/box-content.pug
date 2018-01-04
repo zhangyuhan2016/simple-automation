@@ -1,0 +1,53 @@
+.box-content
+    if hotList.length > 0
+        .hot
+            each img in hotList
+                if hotList.length > 1
+                    .activate.two
+                        img(src= img)
+                else
+                    .activate
+                        img(src= img)
+    .shop-list
+        each val in shopList
+            if val.two
+                .two
+                    .top.activate
+                        .left.shop
+                            .name= val.shop.name
+                            .price
+                                .now= val.shop.price[0]
+                        .right
+                            img(src= val.shop.img)
+                    .next.activate
+                        .left.text
+                            .name= val.next.name
+                            .tip= val.next.tip
+                        .right
+                            i.iconfont.icon-xiayibu
+            else
+                .info.activate
+                    if val.tip.dis
+                        .tip.dis= val.tip.dis
+                    if val.tip.now
+                        .tip.now= val.tip.now
+                    if val.tip.postage
+                        .tip.postage= val.tip.postage
+                    if val.img
+                        img(src= val.img)
+                    if val.name
+                        .name= val.name
+                    if val.describe
+                        .describe= val.describe
+                    else
+                        .describe &nbsp;
+                    if val.price
+                        .price
+                            if val.price.length >= 1
+                                .now= val.price[0]
+                            if val.price.length === 2
+                                .del= val.price[1]
+                    if val.remark
+                        .remark
+                            .text= val.remark.text
+                            .name 来自于 #{val.remark.name} 的评价

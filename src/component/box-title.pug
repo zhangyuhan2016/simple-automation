@@ -1,0 +1,9 @@
+.box-title
+    .title= titleData.title
+    .sort
+        ul.sort-list
+            each val in titleData.titleArr
+                if titleData.default === val
+                    li.now= val
+                else
+                    li= val

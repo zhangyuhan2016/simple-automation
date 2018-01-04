@@ -4,7 +4,7 @@ const DirInfo = {
     src: {
         pug: './src/*.pug',
         template: './src/template/*.pug',
-        scss: './src/*.scss',
+        scss: './src/scss/*.scss',
         images: './src/images/*.*',
         js: './src/*.js'
     },

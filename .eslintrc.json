@@ -11,7 +11,7 @@
       "browser": true
     },
     "globals": {
-      "Swiper": true
+      "$": true
     },
     "rules": {
       "indent": ["error", 4],
