@@ -6,6 +6,63 @@ block head
 block header
     h1 小米商城
 block content
+    -
+        // 商品信息
+        var shopList = [
+        {
+            tip: {now: '新品'},
+            remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: 'asd'},
+            img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
+            name: '人工智能',
+            describe: '',
+            price: ['1899元']
+        },{
+            tip: {postage: '免邮费'},
+            remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
+            img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
+            name: '人工智能',
+            describe: '全新的人工智能',
+            price: ['1899元','2999元']
+        },{
+            tip: {dis: '享9.5折'},
+            remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
+            img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
+            name: '人工智能',
+            describe: '全新的人工智能',
+            price: ['1899元','2999元']
+        },{
+            tip: {dis: '享9.5折'},
+            remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
+            img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
+            name: '人工智能',
+            describe: '全新的人工智能',
+            price: ['1899元','2999元']
+        },{
+            tip: {dis: '享9.5折'},
+            remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
+            img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
+            name: '人工智能',
+            describe: '全新的人工智能',
+            price: ['1899元','2999元']
+        },{
+            tip: {dis: '享9.5折'},
+            remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
+            img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
+            name: '人工智能',
+            describe: '全新的人工智能',
+            price: ['1899元','2999元']
+        },{
+            tip: {dis: '享9.5折'},
+            remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
+            img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
+            name: '人工智能',
+            describe: '全新的人工智能',
+            price: ['1899元','2999元']
+        },{
+            two: true,
+            shop: {name: '小米VR眼睛',price:['299元'],img: '//i1.mifile.cn/a1/pms_1498547317.49155359.jpg?width=80&height=80'},
+            next:{name: '浏览更多', tip: '热门'}
+        }]
     .box
         -
             var titleData = {
@@ -20,242 +77,39 @@ block content
                 var hotList =[
                 '//i1.mifile.cn/a4/1695c18e-8a6b-4bc9-9796-d5abad413184'
                 ]
-                // 商品信息
-                var shopList = [
-                {
-                tip: {now: '新品'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: 'asd'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '',
-                price: ['1899元']
-                },{
-                tip: {postage: '免邮费'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                two: true,
-                shop: {name: '小米VR眼睛',price:['299元'],img: '//i1.mifile.cn/a1/pms_1498547317.49155359.jpg?width=80&height=80'},
-                next:{name: '浏览更多', tip: '热门'}
-                }]
             include component/box-content.pug
             -
                 // 左侧大图
-                var hotList =[]
-                // 商品信息
-                var shopList = [
-                {
-                tip: {now: '新品'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: 'asd'},
-                img: '//i1.mifile.cn/a1/pms_1503909150.67293503!220x220.png',
-                name: '电视机',
-                describe: '',
-                price: ['1899元']
-                },{
-                tip: {dis: '享9.8折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/pms_1503909150.67293503!220x220.png',
-                name: '电视机',
-                describe: '全新的电视机',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                two: true,
-                shop: {name: '小米VR眼睛',price:['299元'],img: '//i1.mifile.cn/a1/pms_1498547317.49155359.jpg?width=80&height=80'},
-                next:{name: '浏览更多', tip: '热门'}
-                }]
+                hotList =[]
+            -
+                shopList[0] = {
+                    tip: {now: '新品'},
+                    remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: 'asd'},
+                    img: '//i1.mifile.cn/a1/pms_1503909300.25797209!220x220.png',
+                    name: '小米电视4A 55英寸',
+                    describe: '4K高清HDR / 真四核64位高性能处理器',
+                    price: ['2799元','2999元']
+                }
             include component/box-content.pug
             -
-                // 左侧大图
-                var hotList =[]
-                // 商品信息
-                var shopList = [
-                {
+                shopList[0] = {
                 tip: {now: '新品'},
                 remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: 'asd'},
                 img: '//i1.mifile.cn/a1/pms_1496997930.13622399!220x220.jpg',
-                name: '电脑',
-                describe: '',
-                price: ['1899元']
-                },{
-                tip: {dis: '享9.8折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/pms_1496997930.13622399!220x220.jpg',
-                name: '电视机',
-                describe: '全新的电视机',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                two: true,
-                shop: {name: '小米VR眼睛',price:['299元'],img: '//i1.mifile.cn/a1/pms_1498547317.49155359.jpg?width=80&height=80'},
-                next:{name: '浏览更多', tip: '热门'}
-                }]
+                name: '小米笔记本Air13.3英寸',
+                describe: '第7代CPU 2G独显 指纹解锁',
+                price: ['2799元','2999元']
+                }
             include component/box-content.pug
             -
-                // 左侧大图
-                var hotList =[]
-                // 商品信息
-                var shopList = [
-                {
-                tip: {now: '新品'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: 'asd'},
-                img: '//i1.mifile.cn/a1/pms_1472609961.95298675!220x220.jpg',
-                name: '家居',
-                describe: '',
-                price: ['1899元']
-                },{
-                tip: {dis: '享9.8折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/pms_1472609961.95298675!220x220.jpg',
-                name: '电视机',
-                describe: '全新的电视机',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                two: true,
-                shop: {name: '小米VR眼睛',price:['299元'],img: '//i1.mifile.cn/a1/pms_1498547317.49155359.jpg?width=80&height=80'},
-                next:{name: '浏览更多', tip: '热门'}
-                }]
+                shopList[0] = {
+                    tip: {now: '新品'},
+                    remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: 'asd'},
+                    img: '//i1.mifile.cn/a1/pms_1506417289.23728408!220x220.jpg',
+                    name: '小米随身手电筒',
+                    describe: '11 挡调光，随心而亮',
+                    price: ['2799元','2999元']
+                }
             include component/box-content.pug
 
     .box
@@ -330,244 +184,45 @@ block content
                 }]
             include component/box-content.pug
             -
-                // 左侧大图
-                var hotList =[]
-                // 商品信息
-                var shopList = [
-                {
-                tip: {now: '新品'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: 'asd'},
-                img: '//i1.mifile.cn/a1/pms_1503909150.67293503!220x220.png',
-                name: '电视机',
-                describe: '',
-                price: ['1899元']
-                },{
-                tip: {dis: '享9.8折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/pms_1503909150.67293503!220x220.png',
-                name: '电视机',
-                describe: '全新的电视机',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                two: true,
-                shop: {name: '小米VR眼睛',price:['299元'],img: '//i1.mifile.cn/a1/pms_1498547317.49155359.jpg?width=80&height=80'},
-                next:{name: '浏览更多', tip: '热门'}
-                }]
+                hotList = []
+                shopList[0] = {
+                    tip: {now: '新品'},
+                    remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: 'asd'},
+                    img: '//i1.mifile.cn/a1/pms_1488272686.62666302!220x220.jpg',
+                    name: '小米米家电动滑板车',
+                    describe: '极简几何设计，1 分钟轻松上手',
+                    price: ['2799元','2999元']
+                }
             include component/box-content.pug
             -
-                // 左侧大图
-                var hotList =[]
-                // 商品信息
-                var shopList = [
-                {
-                tip: {postage: '免邮费'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: 'asd'},
-                img: '//i1.mifile.cn/a1/pms_1496997930.13622399!220x220.jpg',
-                name: '电脑',
-                describe: '',
-                price: ['1899元']
-                },{
-                tip: {dis: '享9.8折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/pms_1496997930.13622399!220x220.jpg',
-                name: '电视机',
-                describe: '全新的电视机',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                two: true,
-                shop: {name: '小米VR眼睛',price:['299元'],img: '//i1.mifile.cn/a1/pms_1498547317.49155359.jpg?width=80&height=80'},
-                next:{name: '浏览更多', tip: '热门'}
-                }]
+                shopList[0] = {
+                    tip: {now: '新品'},
+                    remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: 'asd'},
+                    img: '//i1.mifile.cn/a1/pms_1476425102.6997704!220x220.jpg',
+                    name: '空气净化器滤芯',
+                    describe: '高效净化，可吸入颗粒物、甲醛',
+                    price: ['2799元','2999元']
+                }
             include component/box-content.pug
             -
-                // 左侧大图
-                var hotList =[]
-                // 商品信息
-                var shopList = [
-                {
-                tip: {now: '新品'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: 'asd'},
-                img: '//i1.mifile.cn/a1/pms_1472609961.95298675!220x220.jpg',
-                name: '家居',
-                describe: '',
-                price: ['1899元']
-                },{
-                tip: {dis: '享9.8折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/pms_1472609961.95298675!220x220.jpg',
-                name: '电视机',
-                describe: '全新的电视机',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                two: true,
-                shop: {name: '小米VR眼睛',price:['299元'],img: '//i1.mifile.cn/a1/pms_1498547317.49155359.jpg?width=80&height=80'},
-                next:{name: '浏览更多', tip: '热门'}
-                }]
+                shopList[0] = {
+                    tip: {now: '新品'},
+                    remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: 'asd'},
+                    img: '//i1.mifile.cn/a1/pms_1487824962.01314237!220x220.jpg',
+                    name: '小米无人机4K版套装',
+                    describe: '探索触手可及的新视角',
+                    price: ['2799元','2999元']
+                }
             include component/box-content.pug
             -
-                // 左侧大图
-                var hotList =[]
-                // 商品信息
-                var shopList = [
-                {
-                tip: {now: '新品'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: 'asd'},
-                img: '//i1.mifile.cn/a1/pms_1472609961.95298675!220x220.jpg',
-                name: '路由器',
-                describe: '',
-                price: ['1899元']
-                },{
-                tip: {dis: '享9.8折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/pms_1472609961.95298675!220x220.jpg',
-                name: '电视机',
-                describe: '全新的电视机',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                tip: {dis: '享9.5折'},
-                remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: '2018你好'},
-                img: '//i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg',
-                name: '人工智能',
-                describe: '全新的人工智能',
-                price: ['1899元','2999元']
-                },{
-                two: true,
-                shop: {name: '小米VR眼睛',price:['299元'],img: '//i1.mifile.cn/a1/pms_1498547317.49155359.jpg?width=80&height=80'},
-                next:{name: '浏览更多', tip: '热门'}
-                }]
+                shopList[0] = {
+                    tip: {now: '新品'},
+                    remark: {text: '第一次抽奖抽到键盘，太高兴了，键盘也高颜值，就像客服就像客服就像客服就像客服',name: 'asd'},
+                    img: '//i1.mifile.cn/a1/pms_1488268224.14952632!220x220.jpg',
+                    name: '小米路由器 HD',
+                    describe: '4x4全向性天线，802.11ac wave2',
+                    price: ['2799元','2999元']
+                }
             include component/box-content.pug
 
 block footer
